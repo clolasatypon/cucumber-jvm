@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Runs a scenario, or a "synthetic" scenario derived from an Examples row.
@@ -112,6 +114,18 @@ public class ExecutionUnitRunner extends ParentRunner<Step> {
     }
 
     private String makeNameFilenameCompatible(String name) {
+        int limit = 255 - "TEST-".length() - ".xml".length();
+        if(name.length() > limit){
+            String small = "";
+            for(String word : name.split(" ")){
+                if(word.contains("uid")){
+                    small += word;
+                }
+            }
+            if(small != ""){
+                name =  small;
+            }
+        }
         return name.replaceAll("[^A-Za-z0-9_]", "_");
     }
 }

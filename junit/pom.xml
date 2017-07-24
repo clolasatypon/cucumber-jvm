@@ -5,12 +5,29 @@
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-jvm</artifactId>
         <relativePath>../pom.xml</relativePath>
-        <version>1.2.5</version>
+        <version>1.2.5-atypon-SNAPSHOT</version>
     </parent>
 
     <artifactId>cucumber-junit</artifactId>
     <packaging>jar</packaging>
     <name>Cucumber-JVM: JUnit</name>
+
+    <repositories>
+        <!-- NOTE: Don't add additional repositories here!  Instead we need to configure our internal
+              repository to mirror the repository that you need -->
+        <repository>
+            <id>nexus</id>
+            <url>https://nexus.atypon.com/nexus</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Atypon Internal Maven Repository</name>
+            <url>https://nexus.atypon.com/nexus/content/repositories/passport</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
