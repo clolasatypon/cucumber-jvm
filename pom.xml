@@ -83,9 +83,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git://github.com/cucumber/cucumber-jvm.git</connection>
-        <developerConnection>scm:git:git@github.com:cucumber/cucumber-jvm.git</developerConnection>
-        <url>git://github.com/cucumber/cucumber-jvm.git</url>
+        <connection>scm:git:git://github.com/atypon/cucumber-jvm.git</connection>
+        <developerConnection>scm:git:git@github.com:atypon/cucumber-jvm.git</developerConnection>
+        <url>git://github.com/atypon/cucumber-jvm.git</url>
         <tag>cucumber-jvm-1.2.5-atypon</tag>
     </scm>
 
