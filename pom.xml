@@ -86,7 +86,7 @@
         <connection>scm:git:git://github.com/cucumber/cucumber-jvm.git</connection>
         <developerConnection>scm:git:git@github.com:cucumber/cucumber-jvm.git</developerConnection>
         <url>git://github.com/cucumber/cucumber-jvm.git</url>
-        <tag>v1.2.5-atypon-SNAPSHOT</tag>
+        <tag>cucumber-jvm-1.2.5-atypon-SNAPSHOT</tag>
     </scm>
 
     <dependencyManagement>
