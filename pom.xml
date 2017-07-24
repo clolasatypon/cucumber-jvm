@@ -615,7 +615,7 @@
                 <module>examples/pax-exam</module>
             </modules>
         </profile>
-
+<!--
         <profile>
             <id>release-sign-artifacts</id>
             <modules>
@@ -664,7 +664,7 @@
                 </plugins>
             </build>
         </profile>
-
+-->
         <profile>
             <id>travis-disable-deploy-by-default</id>
             <activation>
