@@ -559,21 +559,29 @@
         <module>core</module>
         <module>java</module>
         <module>testng</module>
+<!--
         <module>picocontainer</module>
         <module>clojure</module>
+-->
         <module>junit</module>
+<!--
         <module>jruby</module>
         <module>jython</module>
+-->
         <module>spring</module>
+<!--
         <module>osgi</module>
         <module>guice</module>
         <module>weld</module>
+-->
         <module>groovy</module>
+<!--
         <module>rhino</module>
         <module>openejb</module>
         <module>scala</module>
         <module>needle</module>
-        <!--<module>android</module>-->
+        <module>android</module>
+-->
     </modules>
 
     <profiles>
